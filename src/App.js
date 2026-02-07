@@ -207,13 +207,6 @@ function App() {
     setBallPosition(newPos);
   }, []);
 
-  const handlePlayersDetected = useCallback((teamA, teamB, ballPos) => {
-    setPlayersA(teamA);
-    setPlayersB(teamB);
-    if (ballPos) {
-      setBallPosition(ballPos);
-    }
-  }, []);
 
   const handleFormationChange = (formationName) => {
     const formation = FORMATIONS[formationName];
